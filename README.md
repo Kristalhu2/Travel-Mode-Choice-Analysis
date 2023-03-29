@@ -1,9 +1,10 @@
 # Travel-Mode-Choice-Analysis Project
+## Summary
 ### Purpose of project:
 
 This travel mode choice analysis is to help transportation planners understand and forecast travel demands, which ultimately assists them in terms of decision making such as the prioritization of infrastructure investments. 
 
-### Summary of Approach:
+### Approach:
 
 This project utilizes two different machine learning approaches, namely supervised learning and unsupervised learning. 
 Travel mode choice prediction uses supervised learning techniques. In this approach, the model predicts the individual’s select mode of transportation based on their attribute data. Four different algorithms were used for comparison purposes: Decision Tree, Gradient Boosting Classifier, Random Forest, and Bagging Classifier. 
@@ -17,7 +18,8 @@ The unsupervised learning model introduces a framework for passenger segmentatio
 ### Data Source:
 The National Household Travel Survey (NHTS) data in the New York state was used to construct and test the two different machine learning models including supervised learning and unsupervised learning.  
 Data Source Citation: U.S. Department of Transportation, Federal Highway Administration, 2017 National Household Travel Survey. URL: http://nhts.ornl.gov.
-More details on Data Cleaning and modelling:
+
+## More details on Data Cleaning and modelling:
 ### Data Cleaning:
 Feature engineering was performed to restructure and clean the selected dataset for better model tuning. Based on the insights developed from the literature reviews, 13 features have been selected to train and test the mode choice model. The final dataset contains 81,401 rows. 
 The 13 attributes include: Dwell Time (DWELTIME), Start Time (STRTTIME), Travel Time (TRVLCMIN), Weekend Trip (TDWKND), Trip Purpose (TRIPPURP), Trip Distance (TRPMILES), Age (R_AGE), Sex (R_SEX), Driver Status (DRIVER), Household Income (HHFAMINC), Count of Household Vehicles (HHVEHCNT), Category of workers per square mile in the census tract of the trip destination's location (DTEEMPDN), and Category of population density (persons per square mile) in the census tract of the trip destination's location (DTPPOPDN). The travel mode choice is represented as Trip Mode (TRPTRANS) in the dataset and has been simplified into 4 main categories: walk, bike, car, public transit.
